@@ -32,7 +32,7 @@ class Post(models.Model):
         return self.likes.count()
 
 
-class Comments(models.Model):
+class Comment(models.Model):
 
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name='comments'
